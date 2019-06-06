@@ -13,7 +13,7 @@ return **[0, 1]**.
 
 ### Submission:
 
-Version 1 : python3 5512 ms 13.9 MB
+**Version 1 :** python3 5512 ms 13.9 MB
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -22,7 +22,7 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j]
 ```
-Version 2 : python3 784 ms	13.9 MB
+**Version 2 :** python3 784 ms	13.9 MB
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -30,7 +30,7 @@ class Solution:
             if target - nums[i] in nums and nums.index(target - nums[i]) != i:
                 return [i, nums.index(target - nums[i])]
 ```              
-Version 3 : python3 28 ms	14.6 MB (Solution, not my Submission)
+**Version 3 :** python3 28 ms	14.6 MB (Solution, not my Submission)
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
