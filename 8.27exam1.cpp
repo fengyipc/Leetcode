@@ -17,14 +17,15 @@ int GetNum(vector<int>& nums, int magic) {
 }
 
 int main() {
-    int a, b;
-    cin >> a >> b;
-    int res = b;
-    (a > b) && (res = a);
+    int num, magic;
+    vector<int> input;
+    cin >> num >> magic;
+    for (int i = 0; i < num; i++) {
+        input.emplace_back();
+        auto& back = input.back();
+        cin >> back;
+    }
 
-    // int x = a - b;
-    // res = a - (x) & (x >> 31);
-    unsigned int x = -1;
-    cout << (x >> 31);
+    cout << GetNum(input, magic);
     return 0;
 }
